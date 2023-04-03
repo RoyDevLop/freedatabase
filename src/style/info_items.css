@@ -1,0 +1,276 @@
+.contenedor-info{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    margin: 20px;
+    right: 20px;
+    width: 100%;
+    height: 90vh;
+}
+
+.contenedor-imagen{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+
+.contenedor-nombreEsquema{
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.915);
+    width: 40%;
+    font-size: 25px;
+    overflow-y: scroll;
+}
+
+.contenedor-nombreEsquema::-webkit-scrollbar{
+    width: 8px;
+    background-color: rgb(255, 255, 255);
+}
+.contenedor-nombreEsquema::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+
+.contenedor-nombre{
+    padding: 25px;
+    height: 90vh;
+    top: -10px;
+    left: 13px;
+    position: relative;
+}
+
+.contenedor-nombre textarea{
+    width: 100%;
+    outline: none;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+.contenedor-titulo{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+.tacho{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: 3px;
+    transition: .1s;
+}
+.contenedor-opciones{
+
+    width: 30px;
+    height: 30px;
+    bottom: 35px;
+    position: relative;
+    left: 94%;
+
+}
+
+
+.mini-contenedor-tacho{
+ 
+    width: 30px;
+    height: 30px;
+    position: relative;
+   right: auto;
+}
+
+.mini-contenedor-tacho:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 20px;
+}
+
+
+.boton-descarga{
+    background-color: rgb(0, 255, 255);
+    border-radius: 20px;
+    width: 80%;
+    transition: .1s;
+}
+.boton-descarga:hover{
+    background-color: rgb(0, 154, 154);
+    color: white;
+    width: 100%;
+}
+
+i{
+    position: absolute;
+    left: 28px;
+}
+
+.contenedor-usuario{
+    border-radius: 20px;
+    background-color: rgb(224, 224, 224);
+    position: relative;
+    display: flex;
+    padding: 10px;
+    top: 10px;
+
+}
+
+.contenedor-imagen-usuario{
+    position: relative;
+    height: 20px;
+    left: 10px;
+}
+
+.icono-usuario{
+    font-size: 36px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+
+.contenedor-usuario-nombre{
+    left: 0px;
+    top: -3px;
+    position: relative;
+    width: 100%;
+}
+
+h2{
+    position: absolute;
+    left: 28px;
+}
+
+.icono-abrir-info{
+    position: relative;
+    transition: .1s;
+    top: 5px;
+}
+
+.icono-abrir-info:hover{
+    border-radius: 100px;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/* CSS VENTANA EMERGENTE*/
+
+.contenedor-ventanaEmergente{
+    backdrop-filter: blur(10px);
+    position: fixed;
+    display: none;
+    left: 0px;
+    top: 10px;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.ventanaEmergente{
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: black;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 70vh;
+    height: 80vh;
+    max-width: 600px;
+    max-height: 800px;
+    box-shadow: 0px 10px 14px -8px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 10px 14px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 10px 14px -8px rgba(0,0,0,1);
+}
+
+.cerrar-modal{
+    position: relative;
+    left: 0px;
+    top: -25px;
+    width: 30px;
+    padding: 3px;
+    border-radius: 100px;
+}
+
+.icono-cerrar-info{
+    font-size: 20px;
+    background-color: red;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.icono-usuario-contenedor{
+    position: relative;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-usuario-perfil{
+    font-size: 100px;   
+}
+
+.contenedor-publicaciones-user{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   background-color: aliceblue;
+    width: 100%;
+    height: 63%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.contenedor-publicaciones-user::-webkit-scrollbar{
+    width: 8px;
+    background-color: rgb(255, 255, 255);
+}
+.contenedor-publicaciones-user::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+
+.contenedor-carta{
+    background-color: white;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+
+    margin: 5px;
+    box-shadow: -1px 4px 21px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 4px 21px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 21px -12px rgba(0,0,0,0.75);
+}
+
+.pub-imagen-perfil{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-post{
+    
+    position: relative;
+    bottom: 20px;
+}
+.info-post button{
+    background-color: aqua;
+    width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.info-post button:hover{
+    background-color: rgb(4, 172, 172);
+    color: white;
+}
