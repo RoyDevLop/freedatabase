@@ -1,5 +1,4 @@
 import '../style/inicio.css'
-import React, {memo, useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import { usePost } from '../context/Postcontext'
 
@@ -9,10 +8,6 @@ function Inicio() {
     const { posts } =  usePost()
 
 
-    
-    console.log(posts)
-    console.log("componente renderizado")
-    
     
 
     return (

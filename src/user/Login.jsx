@@ -41,7 +41,7 @@ function Login() {
                     <ErrorMessage component="p" name="contraseña" className='alert'/>
                     <button className='boton-guardar' type="submit" disabled={isSubmitting}>{isSubmitting ? (<AiOutlineSave className='animate-bounce'/>) : "guardar"}</button>
                     
-                    <Link className="olvidoContraseña" to={"/forgot-password"}>¿olvido la ocntraseña?</Link>
+                    <Link className="olvidoContraseña" to={"/forgot-password"}>¿olvido la contraseña?</Link>
                 </Form>)}
             
             </Formik>

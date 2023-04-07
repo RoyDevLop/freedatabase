@@ -30,27 +30,24 @@ function Info_item() {
       setUserEncontrado(await obtenerUsuario(usuario.id))
     })(); // RESOLVER PROMESA CON CLOSURE
   }, []);
-  console.log("publicacion individual: ", post)
-  const userLogeadoID = userLogedid;
-  const userId = post.creadoPor?._id
-  console.log("user id del qien creo el post: ", userId) // ID DEL QUIEN CREO EL POST
-  console.log("userLogeado id : ", userLogeadoID) // ID DEL QUIEN HA LOGEADO SESION Y SE ALMACENO EN LOCALSTORAGE
 
-  const rol = post.creadoPor?.roles  // ROL DE USUARIO QUIEN CREO EL POST , ES PARA SABER SI ES ADMIN O USUARIO
-  console.log("rol de la persona quien creo el post", rol)
+  const userLogeadoID = userLogedid;// ID DEL QUIEN HA LOGEADO SESION Y SE ALMACENO EN LOCALSTORAGE
+  const userId = post.creadoPor?._id   // ID DEL QUIEN CREO EL POST
+  // ESTO SE USARA PARA COMPARAR ID'S
+
   
   
+
+
+  const rolDeusuario = userEncontrado.data?.roles
+  const idRolUsuario = rolDeusuario?.map(e => e._id)
+  
+  const rolAdmin = "641246755e33c6db52fd5de7"
+ 
+
   const abrir_info = () => {
     modal.style.display = "flex";
   };
-  console.log("user encontrado -----> ", userEncontrado.data)
-  const rolDeusuario = userEncontrado.data?.roles
-  const idRolUsuario = rolDeusuario?.map(e => e._id)
-  //{post.creadoPor ? post.creadoPor.roles == rolAdmin ? console.log("el usuario es admin"): console.log("el usuario no es admin") : null} 
-  const rolAdmin = "641246755e33c6db52fd5de7"
-  console.log("rolAdmin: ", rolAdmin)
-  console.log("id rol  usuario: ", idRolUsuario)
-
 
   return (
     <div className="contenedor-info" key={post._id}>
@@ -67,7 +64,7 @@ function Info_item() {
             </h1>
             <div className="contenedor-opciones">
               
-              {userLogeadoID == userId || idRolUsuario == rolAdmin ? ( // REVISAR AQUI......ADSDSADASDASD
+              {userLogeadoID == userId || idRolUsuario == rolAdmin ? (
                 <div className="mini-contenedor-tacho">
                   <button
                     onClick={() => {

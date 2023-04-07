@@ -24,7 +24,7 @@ function Register() {
             contraseña: Yup.string().required("la contraseña es necesario ").max(30)
         })}
         onSubmit={async (values, actions)=>{
-                //console.log(values)
+                
                 await registrarUsuario(values)  // CORREGIR
                 toast.success("registrado!", {duration:10000})
                 

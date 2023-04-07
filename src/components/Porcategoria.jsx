@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { usePost } from "../context/Postcontext";
 
 
-const Divcategoria = ({categoria}) => {    // function Divcategoria({categoria})   ES TOTAL MENTE LO MISMO
+const Divcategoria = ({categoria}) => {   
   const { posts } = usePost();
 
   return (
