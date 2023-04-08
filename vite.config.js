@@ -5,14 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     proxy: {
-      '/posts': "http://localhost:3000" ,
-      '/register': "http://localhost:3000" ,
-      '/login': "http://localhost:3000",
-      '/users': "http://localhost:3000",  // THIS IS BACKEND'S URL,  THE FRONTEND'S URL IS FROM http://localhost:5173
-      '/users/:id': "http://localhost:3000",
-      '/forgotPassword' : "http://localhost:3000",
-      '/codigo-contrasena': "http://localhost:3000",
-      '/reset_password' : "http://localhost:3000",
+      '/posts': "https://serverbackend-br77.onrender.com" ,
+      '/register': "https://serverbackend-br77.onrender.com" ,
+      '/login': "https://serverbackend-br77.onrender.com",
+      '/users': "https://serverbackend-br77.onrender.com",  // THIS IS BACKEND'S URL,  THE FRONTEND'S URL IS FROM http://localhost:5173
+      '/users/:id': "https://serverbackend-br77.onrender.com",
+      '/forgotPassword' : "https://serverbackend-br77.onrender.com",
+      '/codigo-contrasena': "https://serverbackend-br77.onrender.com",
+      '/reset_password' : "https://serverbackend-br77.onrender.com",
     }
   },
   plugins: [react()]
