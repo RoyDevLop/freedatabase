@@ -16,7 +16,7 @@ function Category() {
             <ul className='lista-categorias'>
                 <Link to={'/'}> 
                     <li className='lista'>
-                        Inicio
+                        modificado
                     </li>
                 </Link>
                 <Link to={'/categoria-ventas'}>
